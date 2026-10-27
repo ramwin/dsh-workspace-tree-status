@@ -1,5 +1,9 @@
 # dsh-workspace-tree-status
 
+[![npm](https://img.shields.io/npm/v/dsh-workspace-tree-status?logo=npm&color=cb3837)](https://www.npmjs.com/package/dsh-workspace-tree-status)
+[![license](https://img.shields.io/npm/l/dsh-workspace-tree-status?color=blue)](LICENSE)
+[![dsh-plugin](https://img.shields.io/badge/DSH-plugin-4d6bfe)](https://github.com/topics/dsh-plugin)
+
 > DeepSeek Harness Web 的**工作区树状态点**：侧边栏工作区树的每个目录，在目录名左侧多一个状态点——里面有会话在等你回话、刚跑完、或还在跑时，一眼就能看到，不用逐个展开文件夹找。
 
 > Aggregated session status on the workspace-tree folder rows of DSH Web's sidebar: a waiting / finished / running dot in front of every folder name, so a collapsed folder still tells you where someone needs you.
