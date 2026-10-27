@@ -1,0 +1,65 @@
+{
+  "name": "dsh-workspace-tree-status",
+  "version": "0.1.0",
+  "description": "工作区树里的父目录显示会话聚合状态：有会话等你输入、刚完成或仍在运行时，在目录名左侧亮起状态点，方便一眼定位。Aggregated session status on workspace-tree folder rows for DSH Web — a waiting/finished/running dot in front of every workspace name.",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-workspace-controller",
+        "@deepseek-ai/dsh-client-ui-session"
+      ],
+      "platform": "web"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "dsh-web",
+    "workspace",
+    "workspace-tree",
+    "sidebar",
+    "session-status",
+    "工作区",
+    "工作区树",
+    "会话状态",
+    "状态点"
+  ],
+  "author": {
+    "name": "ramwin",
+    "email": "ramwin@qq.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramwin/dsh-workspace-tree-status.git"
+  },
+  "homepage": "https://github.com/ramwin/dsh-workspace-tree-status#readme",
+  "bugs": {
+    "url": "https://github.com/ramwin/dsh-workspace-tree-status/issues"
+  }
+}

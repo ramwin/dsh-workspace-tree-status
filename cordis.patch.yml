@@ -1,0 +1,9 @@
+# dsh-workspace-tree-status bundle patch: one plugin row in the web profile.
+#
+# The node half (exports ".") is an empty apply — the plugin is pure UI. The
+# `dsh.client` declaration in package.json loads the browser half
+# (exports "./client") into the Web GUI, where it decorates the sidebar's
+# workspace-tree folder rows with an aggregated session-status dot.
+- insert:
+    - id: workspace-tree-status
+      name: 'dsh-workspace-tree-status'
