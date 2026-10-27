@@ -1,3 +1,7 @@
 node_modules/
 *.log
 .DS_Store
+
+# 全局 gitignore 排除了 lib/（Python 习惯），插件入口必须反向放行
+!lib/
+!lib/**
